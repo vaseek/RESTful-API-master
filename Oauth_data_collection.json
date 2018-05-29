@@ -1,0 +1,126 @@
+{
+	"id": "8fcaa46e-8691-1220-82ed-15d5df3fc660",
+	"name": "Oauth",
+	"description": "",
+	"order": [
+		"e5c52f6f-3873-0a16-c216-7010cb5c7a60",
+		"5863ffd4-12b3-8f1e-1af0-bf2bd8a1a6a5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1526278334291,
+	"owner": "3835413",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "5863ffd4-12b3-8f1e-1af0-bf2bd8a1a6a5",
+			"headers": "Authorization: Bearer bc3fae6f7ec15aa062e324240c6d42d9eb9a1116\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer bc3fae6f7ec15aa062e324240c6d42d9eb9a1116",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "8fcaa46e-8691-1220-82ed-15d5df3fc660",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:4000/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1526278358455,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "e5c52f6f-3873-0a16-c216-7010cb5c7a60",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Basic Y29uZmlkZW50aWFsQXBwbGljYXRpb246dG9wU2VjcmV0\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Y29uZmlkZW50aWFsQXBwbGljYXRpb246dG9wU2VjcmV0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": []
+			},
+			"method": "POST",
+			"collectionId": "8fcaa46e-8691-1220-82ed-15d5df3fc660",
+			"data": [
+				{
+					"key": "username",
+					"value": "pedroetb",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "Y29uZmlkZW50aWFsQXBwbGljYXRpb246dG9wU2VjcmV0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:4000/oauth/token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1526278336607,
+			"version": 2,
+			"responses": [],
+			"currentHelper": "bearerAuth",
+			"helperAttributes": {
+				"id": "bearer"
+			}
+		}
+	]
+}
